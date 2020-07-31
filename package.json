@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap-vue": "^2.16.0",
     "core-js": "^3.6.5",
+    "eslint-config-standard": "^14.1.1",
     "vue": "^2.6.11",
+    "vue-axios": "^2.1.5",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
