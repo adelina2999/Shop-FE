@@ -1,100 +1,194 @@
 <template>
-  <div class="header-wrapper">
-    <div class="container">
-	<header role="banner">
-				<div class="row row-with-vspace site-branding">
-					<div class="col-sm-2  site-title">
-						<h1 class="site-title-heading">
-						<a href="http://www.inforest.com/" title="Example Home" rel="home"><img src="http://www.inforest.com/wp-content/uploads/2016/02/generic_logo1.gif" class="img-responsive home" border="0" ></a>
-						</h1>
-					</div>
-					<div class="col-sm-10 page-header-top-right">
-						<div class="site-description">
-							<div class="row">
-								<div class="col-sm-8">
-									<h1>This Is The Site Description</h1><br>
-								</div>
-								<div class="col-sm-4">
-									<div class="pull-right">
-										<div id="simple-social-icons-3" class="widget simple-social-icons">
-											<ul class="alignleft">
-												<li class="social-facebook">
-													<a href="https://www.facebook.com/" target="_blank">&#xe606;</a>
-												</li>
-												<li class="social-instagram">
-													<a href="https://www.instagram.com/" target="_blank">&#xe600;</a>
-												</li>
-												<li class="social-twitter">
-													<a href="https://www.instagram.com/" target="_blank">&#xe607;</a>
-												</li>
-												<li class="social-youtube">
-													<a href="https://www.youtube.com/" target="_blank">&#xe60f;</a>
-												</li>
-											</ul>
-										 </div>
-									 </div>
-								 <div class="clearfix"></div>
-								 </div>
-							</div>
-						 </div>
-						 <div class="row main-navigation">
-							 <div class="col-md-12">
-								 <nav class="navbar navbar-default" role="navigation">
-									 <div class="navbar-header">
-										 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-											 <span class="sr-only">Toggle navigation</span>
-											 <span class="icon-bar"></span>
-											 <span class="icon-bar"></span>
-											 <span class="icon-bar"></span>
-										 </button>
-									 </div>
-									 <div class="collapse navbar-collapse navbar-primary-collapse">
-										 <ul id="menu-main-menu" class="nav navbar-nav">
-											 <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
-												 <a href="#">Home</a>
-											 </li>
-											 <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29 dropdown" data-dropdown="dropdown">
-												 <a href="#about-us/" class="dropdown-toggle" data-toggle="dropdown">
-												 About <span class="caret"></span>
-												 </a>
-											 <ul class="sub-menu dropdown-menu">
-												 <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62">
-													 <a href="#about-us/faqs/">FAQs</a>
-												 </li>
-												 <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30">
-													 <a href="#about-us/mission/">Mission</a>
-												 </li>
-												 <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-													 <a href="#about-us/company/">Company</a>
-												 </li>
-											 </ul>
-											</li>
-											<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-35 active active">
-												<a href="#locations/">Locations</a>
-											</li>
-											<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37">
-												<a href="#our-menu/">Menu</a>
-											</li>
-											<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40">
-												<a href="#category/events/">Events</a>
-											</li>
-											<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36">
-												<a href="#news/">News</a>
-											</li>
-											<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32">
-												<a href="#contact-f27/">Contact</a>
-											</li>
-										 </ul>
-									 </div>
-								 </nav>
-							 </div>
-						 </div>
-						 <div class="sr-only">
-							 <a href="#content" title="Skip to content">Skip to content</a>
-						 </div>
-					</div>
-				</div>
-			</header>
-		</div>
+  <div>
+		<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">Navbar</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-danger">11</span>
+          </i>
+          Link
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-warning">new</span>
+          </i>
+          Disabled
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-primary">11</span>
+          </i>
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-bell">
+            <span class="badge badge-info">11</span>
+          </i>
+          Test
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-globe">
+            <span class="badge badge-success">11</span>
+          </i>
+          Test
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    
 	</div>
 </template>
+
+<style scoped>
+/* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); */
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+</style>
