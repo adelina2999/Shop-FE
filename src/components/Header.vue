@@ -1,7 +1,7 @@
 <template>
   <div>
 		<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
-  		<a class="navbar-brand">
+  		<a class="navbar-brand" @click="redirect('Home')">
 				<img class="logo-dimensions" src="../assets/logo.jpg">
 			</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,13 +17,13 @@
     	      </a>
     	  	</li>
     	  	<li class="nav-item active">
-    	    	<a class="nav-link" href="#">
+    	    	<a class="nav-link" @click="redirect('Phones')" >
     	      	<i class="fa fa-phone"></i>
 							Phones
     	      </a>
     	  	</li>
 				<!-- TODO to be used -->
-	
+
     		<!-- <ul class="navbar-nav ">
     		  <li class="nav-item">
     		    <a class="nav-link" href="#">
@@ -42,6 +42,17 @@
 		</nav>
 	</div>
 </template>
+
+<script>
+export default {
+	name: 'Header',
+	methods: {
+		redirect(componentName) {
+			this.$router.push({ name: componentName })
+		}
+	}
+}
+</script>
 
 <style scoped>
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
