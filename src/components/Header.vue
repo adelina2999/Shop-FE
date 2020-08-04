@@ -11,15 +11,15 @@
   		<div class="collapse navbar-collapse">
     		<ul class="navbar-nav mr-auto">
     	  	<li class="nav-item active">
-    	   	  <a class="nav-link" href="#">
+    	   	  <a class="nav-link" @click="redirect('Laptops')">
     	      	<i class="fa fa-laptop"></i>
     	      	Laptops
     	      </a>
     	  	</li>
     	  	<li class="nav-item active">
-    	    	<a class="nav-link" @click="redirect('Phones')" >
-    	      	<i class="fa fa-phone"></i>
-							Phones
+    	   	  <a class="nav-link" @click="redirect('Phones')">
+    	      	<i class="fa fa-mobile"></i>
+    	      	Phones
     	      </a>
     	  	</li>
 				<!-- TODO to be used -->

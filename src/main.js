@@ -3,6 +3,7 @@ import App from './App.vue'
 import Router from 'vue-router'
 import Home from './components/Home'
 import Phones from './components/Phones.vue'
+import Laptops from './components/Laptops.vue'
 import store from './store'
 import { BootstrapVue } from 'bootstrap-vue'
 import axios from 'axios'
@@ -27,6 +28,11 @@ const router = new Router({
       path: '/phones',
       name: 'Phones',
       component: Phones
+    },
+    {
+      path: '/laptops',
+      name: 'Laptops',
+      component: Laptops
     }
   ]
 })
