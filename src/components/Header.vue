@@ -22,6 +22,12 @@
     	      	Phones
     	      </a>
     	  	</li>
+					<li class="nav-item active">
+    	   	  <a class="nav-link" @click="redirect('TV')">
+    	      	<i class="fa fa-tv"></i>
+    	      	TV
+    	      </a>
+    	  	</li>
 				<!-- TODO to be used -->
 
     		<!-- <ul class="navbar-nav ">
