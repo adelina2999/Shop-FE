@@ -28,17 +28,6 @@
     	      	TV
     	      </a>
     	  	</li>
-				<!-- TODO to be used -->
-
-    		<!-- <ul class="navbar-nav ">
-    		  <li class="nav-item">
-    		    <a class="nav-link" href="#">
-    		      <i class="fa fa-bell">
-    		        <span class="badge badge-info">11</span>
-    		      </i>
-    		      Test
-    		    </a>
-    		  </li> -->
     		</ul> 
     		<form class="form-inline my-2 my-lg-0">
     	  	<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
