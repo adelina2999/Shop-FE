@@ -72,8 +72,6 @@ export default {
   },
   created() {
     this.getLaptops()
-
-    event.target.reset()
   }
 }
 </script>
