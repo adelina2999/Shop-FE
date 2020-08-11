@@ -2,10 +2,20 @@
   <div>
     <div class="container">
       <div class="form-group">
-        <input v-model="laptopName" placeholder="Enter Laptop name" class="form-control" id="laptopName">
+        <input v-model.trim="$v.laptopName.$model" :class="{ 'is-invalid':$v.laptopName.$error, 'is-valid':!$v.laptopName.$invalid }" placeholder="Enter Laptop name" class="form-control" id="laptopName">
+        <div class="valid-feedback">Laptop name is valid</div>
+        <div class="invalid-feedback">
+          <span v-if="!$v.laptopName.required">Laptop name is required</span>
+          <span v-if="!$v.laptopName.minLength">Laptop name must have at least {{ $v.laptopName.$params.minLength.min }} leters</span>
+          <span v-if="!$v.laptopName.maxLength">Laptop name must have at most {{ $v.laptopName.$params.maxLength.max }} leters</span>
+        </div>
       </div>
       <div class="form-group">
-        <input v-model="laptopPrice" placeholder="Enter Laptop price" class="form-control" id="laptopPrice">
+        <input type="number" v-model.number.lazy="$v.laptopPrice.$model" :class="{ 'is-invalid':$v.laptopPrice.$error, 'is-valid':!$v.laptopPrice.$invalid }"  placeholder="Enter Laptop price" class="form-control" id="laptopPrice">
+        <div class="valid-feedback">The price is valid</div>
+        <div class="invalid-feedback">
+          <span v-if="!$v.laptopPrice.between">Must be between {{ $v.laptopPrice.$params.between.min }} and {{ $v.laptopPrice.$params.between.max }}</span>
+        </div>
       </div>
       <div class="form-check">
         <input v-model="laptopAvailability" type="checkbox" class="form-check-input" id="laptopAvailability">
@@ -38,6 +48,7 @@
 
 <script>
 import axios from 'axios'
+import { required, minLength, maxLength, between } from 'vuelidate/lib/validators'
 
 export default {
   name: 'Laptops',
@@ -47,6 +58,16 @@ export default {
       laptopName: '',
       laptopPrice: null,
       laptopAvailability: false
+    }
+  },
+  validations: {
+    laptopName: {
+      required,
+      minLength: minLength(2),
+      maxLength: maxLength(15)
+    },
+    laptopPrice: {
+      between: between(200, 2000)
     }
   },
   methods: {
